@@ -6,34 +6,50 @@ class index extends Component {
     return (
       <div className='container'>
           <Head>
-              <title>Next Portfolio</title>
+            <link href="https://fonts.googleapis.com/css?family=Karla:400" rel="stylesheet"/>
+            <title>Next Portfolio</title>
+            <nav>
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT ME</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
           </Head>
         
-        <div className='welcome-msg'>Welcome!</div>
+        <div className='welcome-msg'>Hi!</div>
+        <div className='projects-container'>
+            <h4>Recent Works</h4>
+        </div>
 
-        <nav>
-            <ul>
-                <li>Projects</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <style global jsx>{`
+            body {
+                font-family: 'Karla', sans-serif;
+                font-size: 12px;
+            }
+        `}
+        </style>
 
         <style jsx>{`
-            .welcome-msg {
+            .container, nav {
                 width: 90%;
                 margin: auto;
+            }   
+            .welcome-msg {
                 text-align: center;
                 padding: 10px;
                 background: black;
                 color: white;
             }
+            .projects-container {
+                
+            }
             ul {
-                margin: auto;
                 padding: 0;
                 text-align: center;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-end;
+                letter-spacing: 0.04em;
             }
             li {
                 float: left;
