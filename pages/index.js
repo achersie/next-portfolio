@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import Head from 'next/head'
+import React, { Component } from "react"
+import Head from "next/head"
+import Projects from "./projects";
 
 class index extends Component {
   render() {
@@ -20,6 +21,7 @@ class index extends Component {
         <div className='welcome-msg'>Hi!</div>
         <div className='projects-container'>
             <h4>Recent Works</h4>
+            <Projects />    
         </div>
 
         <style global jsx>{`
